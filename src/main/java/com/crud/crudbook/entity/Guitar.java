@@ -4,18 +4,18 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity(name = "Book")
-@Table(name = "book")
+@Entity(name = "Guitar")
+@Table(name = "guitar")
 @Data
-public class Book {
+public class Guitar {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String title;
+    private String brand;
 
-    private String author;
+    private Long strings;
 
-    private Integer numberPages;
+    private String type;
 }
